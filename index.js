@@ -246,7 +246,7 @@ bot.action("btn_23", async (ctx) => {
       Markup.inlineKeyboard([
         [
           Markup.button.callback("Россия Федерацияси", "btn_32"), 
-          Markup.button.callback("Корея Республикаси", "btn_24"),
+          Markup.button.callback("Корея Республикаси", "btn_koreya"),
         ]
       ])
     );
@@ -258,7 +258,7 @@ bot.action("btn_23", async (ctx) => {
     console.error(error);
   }
 });
-
+elchi('btn_koreya', 35.176364, 126.808108, 'Кванджу шаҳрида Гвангсан-гу, Пунгеонг-ро, 145-82 Teл: +070-4252-2772')
 bot.action('btn_24', async (ctx)=>{
   try {
     await ctx.answerCbQuery();
