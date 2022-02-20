@@ -521,6 +521,7 @@ bot.action("btn_24", async (ctx)=>{
 function infoMap(btn, text, lat, lan, name) {
   bot.action(btn, async (ctx) => {
     try {
+      await ctx.answerCbQuery();
       await telegram.sendLocation(ctx.chat.id, lat, lan);
       await ctx.replyWithHTML(`${name}${text}`);
     } catch (error) {
@@ -532,7 +533,7 @@ function infoMap(btn, text, lat, lan, name) {
 // Andijon
 infoMap(
   "btn_9",
-  `\n\n<b>Filial raxbari:</b>\nГавхарака\n\n<b>Tel raqami:</b>\n☎️95 202-33-55 (+998 90 571 47 77)`,
+  `\n\n<b>Filial raxbari:</b>\nСаттаров Гавхар Адилович\n\n<b>Tel raqami:</b>\n☎️95 202-33-55 (+998 90 571 47 77)`,
   41.37255691958309,
   69.288790291014,
   "Andijon filliali malumotlari"
@@ -556,7 +557,7 @@ infoMap(
 // Qashqadaryo
 infoMap(
   "btn_12",
-  `\n\n<b>Filial raxbari:</b>\nТожиддин ака\n\n<b>Tel raqami:</b>\n75 224-05-25(+998 98 777 34 37)`,
+  `\n\n<b>Filial raxbari:</b>\nРахимов Тожиддин Уралович\n\n<b>Tel raqami:</b>\n75 224-05-25(+998 98 777 34 37)`,
   38.83258775290569,
   65.80790130528706,
   "Qashqadaryo filliali malumotlari"
@@ -604,7 +605,7 @@ infoMap(
 // Toshkent viloyati
 infoMap(
   "btn_18",
-  `\n\n<b>Filial raxbari:</b>\nНодир ака\n\n<b>Tel raqami:</b>\n+998 99 999 96 99`,
+  `\n\n<b>Filial raxbari:</b>\nБахромов Нодир Қодирбек ўғли\n\n<b>Tel raqami:</b>\n+998 99 999 96 99`,
   41.064729854845915,
   69.34362918650616,
   "Toshkent viloyati filliali malumotlari"
@@ -612,7 +613,7 @@ infoMap(
 // Toshkent shahri
 infoMap(
   "btn_19",
-  `\n\n<b>Filial raxbari:</b>\nУлугбек ака\n\n<b>Tel raqami:</b>\n71-236-30-40(236-00-23)`,
+  `\n\n<b>Filial raxbari:</b>\nТешабаев Улуғбек Юлдашевич\n\n<b>Tel raqami:</b>\n71-236-30-40(236-00-23)`,
   41.3030661953467,
   69.28198194876636,
   "Toshkent shahri filliali malumotlari"
